@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>Sketchpad</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <button id="lineWidthDecrease">-</button>
+                <span id="lineWidth" style="color:white">0</span>
+                <button id="lineWidthIncrease">+</button>
+                <input type="color" id="lineColor" />
+                <button id="undo">Undo</button>
+                <button id="clear">Clear</button>
+                <button id="downloadButton">Download</button>
+            </header>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1000"
+                height="1000"
+            ></svg>
+        </div>
+        <script
+            type="module"
+            src="https://unpkg.com/drawtheline@1.1.0/index.js"
+        ></script>
+        <script
+            type="module"
+            src="https://unpkg.com/slowreveal@1.2.1/index.js"
+        ></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
